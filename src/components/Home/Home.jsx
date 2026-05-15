@@ -1,4 +1,5 @@
-import avatar from "../../assets/hero.png";
+
+import Draj from "../../assets/Draj.jpeg";
 
 const Home = ({ onOpenContact }) => {
   return (
@@ -37,11 +38,11 @@ const Home = ({ onOpenContact }) => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/2 flex justify-center">
+      <div className="w-full md:w-1/2 flex justify-center ">
         <img
-          className="w-64 sm:w-80 md:w-96 lg:w-[420px] object-contain"
-          src={avatar}
-          alt="Avatar"
+          className="w-64 sm:w-80 md:w-96 lg:w-[420px] object-contain rounded-full shadow-2xl border-4 border-gray-700  hover:border-blue-500 transition-all duration-300"
+          src={Draj}
+          alt="Draj"
         />
       </div>
     </div>
