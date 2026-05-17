@@ -1,4 +1,4 @@
-import avatar from '../../assets/hero.png';
+import avatar from '../../assets/about.jpg';
 import { IoArrowForward } from 'react-icons/io5';
 const About=()=>{
     return(
@@ -16,7 +16,7 @@ const About=()=>{
                         <IoArrowForward size={20} className="text-blue-500" />
                         <span className='w-96'>
                             <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Frontend Developer</h1>
-                            <p className='text-sm md:text-md leading-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                            <p className='text-sm md:text-md leading-tight'>Building responsive and intuitive user interfaces with React, JavaScript, and modern CSS frameworks. Focused on creating seamless user experiences and high-performance web applications.</p>
                         </span>
                         </div>
 
@@ -25,7 +25,7 @@ const About=()=>{
                         <IoArrowForward size={20} className="text-blue-500" />
                         <span className='w-96'>
                             <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Backend Developer</h1>
-                            <p className='text-sm md:text-md leading-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                            <p className='text-sm md:text-md leading-tight'>Developing robust server-side applications and APIs using Node.js and Express. Specializing in database integration, authentication, and creating scalable backend solutions.</p>
                         </span>
                         </div>
 
@@ -34,8 +34,8 @@ const About=()=>{
                                        <div className="flex items-center gap-2">
                         <IoArrowForward size={20} className="text-blue-500" />
                         <span className='w-96'>
-                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Sql Developer</h1>
-                            <p className='text-sm md:text-md leading-tight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                            <h1 className='text-xl md:text-2xl font-semibold leading-normal'>SQL Developer</h1>
+                            <p className='text-sm md:text-md leading-tight'>Designing and optimizing databases with SQL, creating complex queries, and ensuring data integrity. Expertise in database architecture and performance optimization.</p>
                         </span>
                         </div>
                 </ul>
