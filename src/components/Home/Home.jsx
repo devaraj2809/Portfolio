@@ -1,6 +1,6 @@
 
 import Draj from "../../assets/Draj.jpeg";
-
+import resume from "../../assets/Devaraj_Naik_Resume_.pdf";
 const Home = ({ onOpenContact }) => {
   return (
     <div className="min-h-screen text-white flex flex-col-reverse md:flex-row items-center justify-between px-6 py-10 md:px-20 md:py-24 gap-10">
@@ -26,7 +26,7 @@ const Home = ({ onOpenContact }) => {
           </button>
           
           <a
-            href="/resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-transparent border-2 border-purple-500 rounded-xl text-lg font-semibold hover:bg-purple-500/10 transition duration-300 text-center hover:shadow-lg hover:shadow-purple-500/50 hover:scale-105 transform"
