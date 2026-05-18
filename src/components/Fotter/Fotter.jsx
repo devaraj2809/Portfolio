@@ -21,13 +21,13 @@ const Footer=()=>{
                     <MdOutlineEmail size={24} className="text-blue-400 group-hover:scale-110 transition-transform"/>
                     <span className="text-sm md:text-base">devarajnaik098@gmail.com</span>
                 </a>
-                <a href="https://linkedin.com/in/devaraj-naik" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/50 transition-all duration-300 group">
+                <a href="https://www.linkedin.com/in/devaraj-naik-3882b52a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/50 transition-all duration-300 group">
                     <CiLinkedin size={24} className="text-blue-400 group-hover:scale-110 transition-transform"/>
                     <span className="text-sm md:text-base">linkedin.com/in/devaraj-naik</span>
                 </a>
-                <a href="https://github.com/devarajnaik" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/50 transition-all duration-300 group">
+                <a href="https://github.com/devaraj2809" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/50 transition-all duration-300 group">
                     <FaGithub size={24} className="text-blue-400 group-hover:scale-110 transition-transform"/>
-                    <span className="text-sm md:text-base">github.com/devarajnaik</span>
+                    <span className="text-sm md:text-base">github.com/devaraj2809</span>
                 </a>
             </div>
           </div>
