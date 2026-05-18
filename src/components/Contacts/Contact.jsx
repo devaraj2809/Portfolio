@@ -1,47 +1,54 @@
 const Contact = ({ onClose }) => {
   return (
     <div
-      className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-      onClick={onClose}   // 👈 click outside closes modal
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
+      onClick={onClose}
     >
       
-      {/* stop propagation so inside click doesn't close */}
       <div
-        className="bg-slate-900 border border-gray-700 rounded-2xl p-8 w-full max-w-2xl relative"
+        className="bg-white/10 border border-white/20 rounded-2xl p-8 w-full max-w-2xl relative backdrop-blur-xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
 
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-white text-2xl hover:text-red-500"
+          className="absolute top-4 right-4 text-gray-400 text-3xl hover:text-white hover:scale-110 transition-all"
         >
           ✕
         </button>
 
         {/* Heading */}
-        <h1 className="text-white text-3xl mb-6 text-center">
-          Contact Me
+        <h1 className="text-white text-3xl md:text-4xl mb-2 text-center font-bold">
+          Get In Touch
         </h1>
+        <p className="text-gray-300 text-center mb-8">I'd love to hear from you. Send me a message!</p>
 
         {/* Form */}
         <form className="space-y-4">
-          <input
-            className="w-full p-3 bg-[#111] text-white rounded-lg"
-            placeholder="Name"
-          />
-          <input
-            className="w-full p-3 bg-[#111] text-white rounded-lg"
-            placeholder="Email"
-          />
-          <textarea
-            className="w-full p-3 bg-[#111] text-white rounded-lg"
-            rows="5"
-            placeholder="Message"
-          />
+          <div>
+            <input
+              className="w-full p-4 bg-white/10 text-white rounded-xl border border-white/20 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/20 transition-all"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <input
+              className="w-full p-4 bg-white/10 text-white rounded-xl border border-white/20 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/20 transition-all"
+              placeholder="Your Email"
+              type="email"
+            />
+          </div>
+          <div>
+            <textarea
+              className="w-full p-4 bg-white/10 text-white rounded-xl border border-white/20 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/20 transition-all resize-none"
+              rows="5"
+              placeholder="Your Message"
+            />
+          </div>
 
-          <button className="w-full bg-cyan-500 py-3 rounded-lg text-black font-semibold">
-            Send
+          <button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:shadow-lg hover:shadow-blue-500/50 py-4 rounded-xl text-white font-semibold transition-all duration-300 hover:scale-105 transform">
+            Send Message
           </button>
         </form>
 

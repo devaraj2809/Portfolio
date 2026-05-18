@@ -1,29 +1,36 @@
 const ProjectCard = ({ title, description, technologies }) => {
   return (
-    <div className="bg-slate-900/60 border border-gray-800 rounded-2xl p-6 shadow-lg hover:border-cyan-500 hover:scale-[1.02] transition-all duration-300">
+    <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:bg-white/8 hover:border-blue-500/50 transition-all duration-300 overflow-hidden">
       
-      {/* Title */}
-      <h2 className="text-2xl font-semibold text-white mb-4">
-        {title}
-      </h2>
+      {/* Gradient Background on Hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/5 group-hover:to-purple-500/5 transition-all duration-300"></div>
+      <div className="relative">
+        {/* Title */}
+        <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 group-hover:text-blue-300 transition-colors">
+          {title}
+        </h2>
 
-      {/* Description */}
-      <ul className="space-y-3 text-gray-300 text-sm md:text-base mb-6">
-        {description.map((item, i) => (
-          <li key={i}>• {item}</li>
-        ))}
-      </ul>
+        {/* Description */}
+        <ul className="space-y-3 text-gray-300 text-sm md:text-base mb-6">
+          {description.map((item, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="text-blue-400 flex-shrink-0 mt-1">▸</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
 
-      {/* Technologies */}
-      <div className="flex flex-wrap gap-3">
-        {technologies.map((tech, i) => (
-          <span
-            key={i}
-            className="bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-full text-sm"
-          >
-            {tech}
-          </span>
-        ))}
+        {/* Technologies */}
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((tech, i) => (
+            <span
+              key={i}
+              className="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-3 py-1 rounded-full text-xs md:text-sm font-medium hover:bg-blue-500/30 transition-all duration-300"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -74,36 +81,36 @@ const Projects = () => {
       technologies: ["React.js", "JavaScript", "CSS", "React Hooks"],
     },
     {
-  title: "Police Management Application",
-  description: [
-    "Built using Angular for frontend and Node.js for backend.",
-    "Uses MySQL database for storing complaints and case records.",
-    "Helps police receive complaints from victims and take action against culprits.",
-  ],
-  technologies: [
-    "Angular",
-    "Node.js",
-    "MySQL",
-    "REST API",
-  ],
-},
+      title: "Police Management Application",
+      description: [
+        "Built using Angular for frontend and Node.js for backend.",
+        "Uses MySQL database for storing complaints and case records.",
+        "Helps police receive complaints from victims and take action against culprits.",
+      ],
+      technologies: [
+        "Angular",
+        "Node.js",
+        "MySQL",
+        "REST API",
+      ],
+    },
   ];
 
   return (
-    <section id="Projects" className="px-6 py-14 md:px-12 lg:px-24 bg-black">
+    <section id="Projects" className="px-6 py-20 md:px-20">
       
       {/* Heading */}
-      <div className="mb-12 text-center md:text-left">
-        <h1 className="text-3xl md:text-5xl font-bold text-white">
-          Projects
+      <div className="mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Featured Projects
         </h1>
-        <p className="text-gray-400 mt-3 text-sm md:text-base">
-          Some of the projects I have worked on
+        <p className="text-gray-400 mt-4 text-base md:text-lg">
+          Some of my recent work and accomplishments
         </p>
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

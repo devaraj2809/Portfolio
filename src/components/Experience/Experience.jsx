@@ -91,39 +91,39 @@ const Experience = () => {
   return (
     <section
       id="Experience"
-      className="px-6 py-14 md:px-12 lg:px-24 bg-black"
+      className="px-6 py-20 md:px-20"
     >
       {/* Heading */}
-      <div className="mb-12">
-        <h1 className="text-3xl md:text-5xl font-bold text-white text-center md:text-left">
+      <div className="mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           Experience & Skills
         </h1>
 
-        <p className="text-gray-400 mt-3 text-sm md:text-base text-center md:text-left">
-          Technologies and professional experience
+        <p className="text-gray-400 mt-4 text-base md:text-lg">
+          Technologies and professional expertise
         </p>
       </div>
 
       {/* Main Layout */}
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-16">
         
         {/* LEFT SIDE - SKILLS */}
         <div className="lg:w-1/2">
-          <h2 className="text-2xl font-semibold text-white mb-6">
-            Skills
+          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
+            Technical Skills
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="group flex flex-col items-center justify-center p-6 bg-[#111] rounded-2xl border border-gray-800 shadow-lg hover:border-cyan-500 hover:scale-105 transition-all duration-300"
+                className="group flex flex-col items-center justify-center p-6 bg-white/5 rounded-2xl border border-white/10 shadow-lg hover:bg-white/10 hover:border-blue-500/50 hover:scale-110 transition-all duration-300 cursor-pointer"
               >
-                <div className={`${skill.color} mb-3`}>
+                <div className={`${skill.color} mb-3 group-hover:scale-125 transition-transform duration-300`}>
                   {skill.icon}
                 </div>
 
-                <p className="text-gray-300 text-sm md:text-base font-medium">
+                <p className="text-gray-300 text-xs sm:text-sm font-semibold text-center">
                   {skill.name}
                 </p>
               </div>
@@ -133,41 +133,69 @@ const Experience = () => {
 
         {/* RIGHT SIDE - EXPERIENCE */}
         <div className="lg:w-1/2">
-          <h2 className="text-2xl font-semibold text-white mb-6">
-            Experience
+          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
+            Work Experience
           </h2>
 
           {/* Experience Card 1 */}
-          <div className="bg-slate-900/60 border border-gray-800 rounded-2xl p-6 mb-6 shadow-lg hover:border-cyan-500 transition duration-300">
-            <h3 className="text-xl font-semibold text-white">
-              Data Analyst — Rapsol Technology
-            </h3>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6 shadow-lg hover:bg-white/8 hover:border-blue-500/50 transition-all duration-300">
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-white">
+                Data Analyst
+              </h3>
+              <span className="text-xs md:text-sm px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full">Internship</span>
+            </div>
 
-            <p className="text-gray-400 text-sm mt-1">
-             Sep 2023 – Nov 2023
+            <p className="text-blue-400 font-medium text-sm mb-1">Rapsol Technology</p>
+
+            <p className="text-gray-400 text-xs md:text-sm mb-4">
+              Sep 2023 – Nov 2023
             </p>
 
-            <ul className="mt-4 space-y-2 text-gray-300 text-sm">
-              <li>• Working as a Data Analyst Intern</li>
-              <li>• Performing data analysis and reporting</li>
-              <li>• Handling data visualization and insights</li>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">▸</span>
+                <span>Working as a Data Analyst Intern analyzing trends and patterns</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">▸</span>
+                <span>Performing comprehensive data analysis and reporting</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-blue-400 mt-1">▸</span>
+                <span>Handling data visualization and generating actionable insights</span>
+              </li>
             </ul>
           </div>
 
           {/* Experience Card 2 */}
-          <div className="bg-slate-900/60 border border-gray-800 rounded-2xl p-6 shadow-lg hover:border-cyan-500 transition duration-300">
-            <h3 className="text-xl font-semibold text-white">
-              Software Engineer — Vinatu Software (Startup)
-            </h3>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:bg-white/8 hover:border-purple-500/50 transition-all duration-300">
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-white">
+                Software Engineer
+              </h3>
+              <span className="text-xs md:text-sm px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">Current</span>
+            </div>
 
-            <p className="text-gray-400 text-sm mt-1">
+            <p className="text-purple-400 font-medium text-sm mb-1">Vinatu Software (Startup)</p>
+
+            <p className="text-gray-400 text-xs md:text-sm mb-4">
               April 2025 - Present
             </p>
 
-            <ul className="mt-4 space-y-2 text-gray-300 text-sm">
-              <li>• Working as a Software Developer</li>
-              <li>• Junior Software Engineer role</li>
-              <li>• Building responsive web applications</li>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">▸</span>
+                <span>Working as a Junior Software Engineer developing full-stack solutions</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">▸</span>
+                <span>Building responsive and scalable web applications with modern technologies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-purple-400 mt-1">▸</span>
+                <span>Collaborating with teams to deliver high-quality software solutions</span>
+              </li>
             </ul>
           </div>
         </div>
