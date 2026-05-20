@@ -2,6 +2,7 @@ import {
   FaCss3Alt,
   FaHtml5,
   FaJs,
+  
   FaReact,
   FaJava, FaNodeJs,FaDocker,
 } from 'react-icons/fa';
@@ -11,6 +12,10 @@ import {
   SiMysql,
   SiPostgresql,
   SiVite,  SiExpress,
+  SiRedux,
+  SiPython,
+    SiC,
+  SiCplusplus,
 } from 'react-icons/si';
 
 const Experience = () => {
@@ -40,6 +45,27 @@ const Experience = () => {
       color: 'text-violet-400',
       name: 'Vite',
     },
+    {
+      icon: <SiRedux size={45} />,
+      color: 'text-purple-500',
+      name: 'Redux',
+    }
+    ,{
+    icon:  <SiC size={33} />,
+    color: 'text-gray-300',
+    name: 'C',
+  },
+    {
+      icon: <SiCplusplus size={33} />,
+      color: 'text-gray-300',
+      name: 'C++',
+    },
+   {
+  icon: <SiPython size={45} />,
+  color: 'text-yellow-400',
+  name: 'Python',
+},
+     
     {
       icon: <FaNodeJs size={45} />,
       color: 'text-green-500',
