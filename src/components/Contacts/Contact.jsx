@@ -9,7 +9,6 @@ const Contact = ({ onClose }) => {
         className="bg-white/10 border border-white/20 rounded-2xl p-8 w-full max-w-2xl relative backdrop-blur-xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -17,7 +16,6 @@ const Contact = ({ onClose }) => {
         >
           ✕
         </button>
-
         {/* Heading */}
         <h1 className="text-white text-3xl md:text-4xl mb-2 text-center font-bold">
           Get In Touch
