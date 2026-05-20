@@ -1,3 +1,5 @@
+
+import Certificate from "../Certificate/Certificate";
 const Education = () => {
   const education = [
     {
@@ -15,6 +17,7 @@ const Education = () => {
   ];
 
   return (
+    <>
     <section
       id="Education"
       className="px-6 py-20 md:px-20"
@@ -58,6 +61,9 @@ const Education = () => {
         ))}
       </div>
     </section>
+
+    <Certificate />
+    </>
   );
 };
 
