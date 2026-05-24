@@ -4,7 +4,6 @@ const Contact = ({ onClose }) => {
       className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
       onClick={onClose}
     >
-      
       <div
         className="bg-white/10 border border-white/20 rounded-2xl p-8 w-full max-w-2xl relative backdrop-blur-xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
@@ -21,7 +20,6 @@ const Contact = ({ onClose }) => {
           Get In Touch
         </h1>
         <p className="text-gray-300 text-center mb-8">I'd love to hear from you. Send me a message!</p>
-
         {/* Form */}
         <form className="space-y-4">
           <div>
