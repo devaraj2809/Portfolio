@@ -1,6 +1,7 @@
-import { certificates } from '../../constants'
+import { certificateUrls } from '../../constants'
 
 function Certificate() {
+  const { javaCertificate, pythonCertificate } = certificateUrls
   return (
     <div className="container mx-auto px-4 py-8 text-white">
       <h2 className="text-3xl font-bold mb-6 text-center">
@@ -35,9 +36,11 @@ function Certificate() {
             View Certificate
           </a>
         </div>
+          
       </div>
-    </section>
+      </div>
+ 
   )
 }
 
-export default Certificate
+export default Certificate;

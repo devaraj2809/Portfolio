@@ -110,6 +110,11 @@ export const certificates = [
   'Problem Solving Practice - codechef',
 ]
 
+export const certificateUrls = {
+  javaCertificate: 'https://www.udemy.com/certificate/UC-JAVA-OOP',
+  pythonCertificate: 'https://nptel.ac.in/certificate/PYTHON',
+}
+
 export const contacts = [
   { icon: FaEnvelope, title: 'Email', value: 'devarajnaik098@gmail.com', href: 'mailto:devarajnaik098@gmail.com' },
   { icon: FaPhoneAlt, title: 'Phone', value: '+91 94492 06912', href: 'tel:+91 94492 06912' },
