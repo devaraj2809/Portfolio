@@ -1,7 +1,6 @@
-import javaCertificate from '../../assets/javaProgramingFunadmentals.pdf';
-import pythonCertificate from '../../assets/The Joy of Computing using Python.jpg';
+import { certificates } from '../../constants'
 
-const Certificate = () => {
+function Certificate() {
   return (
     <div className="container mx-auto px-4 py-8 text-white">
       <h2 className="text-3xl font-bold mb-6 text-center">
@@ -36,10 +35,9 @@ const Certificate = () => {
             View Certificate
           </a>
         </div>
-
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default Certificate;
+export default Certificate
