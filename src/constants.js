@@ -23,15 +23,15 @@ export const heroStats = [
 
 export const education = [
   {
-    year: '2023 - 2025',
-    title: 'B-Tech in Computer Science',
-    place: 'Dayananda Sagar University, Bengaluru',
+    year: '2021 - 2024',
+    title: 'B-E in Computer Science',
+    place: 'R V College of Engineering, Bengaluru',
     details: 'Focused on advanced algorithms, machine learning, and software engineering foundations.'
   },
   {
     year: '2018 - 2021',
     title: 'Diploma in Computer Science',
-    place: 'Shree Vidyadhiraj Polytechnic, Kunta',
+    place: 'R V College of Engineering, Bengaluru',
     details: 'Built strong fundamentals in programming, web technologies, and database systems.'
   }
 ]
@@ -107,14 +107,14 @@ export const workHighlights = [
 export const certificates = [
   'Java OOP - Udemy',
   'Programming in Java - NPTEL',
-  'Problem Solving Practice - LeetCode',
+  'Problem Solving Practice - codechef',
 ]
 
 export const contacts = [
-  { icon: FaEnvelope, title: 'Email', value: 'abhishekjuvatkar2001@gmail.com', href: 'mailto:abhishekjuvatkar2001@gmail.com' },
-  { icon: FaPhoneAlt, title: 'Phone', value: '+91 96118 70893', href: 'tel:+919611870893' },
-  { icon: FaLinkedinIn, title: 'LinkedIn', value: 'linkedin.com/in/abhishek-juvatkar', href: 'https://www.linkedin.com/in/abhishek-juvatkar' },
-  { icon: FaGithub, title: 'GitHub', value: 'github.com/123abhisek', href: 'https://github.com/123abhisek' },
+  { icon: FaEnvelope, title: 'Email', value: 'devarajnaik098@gmail.com', href: 'mailto:devarajnaik098@gmail.com' },
+  { icon: FaPhoneAlt, title: 'Phone', value: '+91 94492 06912', href: 'tel:+91 94492 06912' },
+  { icon: FaLinkedinIn, title: 'LinkedIn', value: 'linkedin.com/in/devaraj-naik', href: 'https://www.linkedin.com/in/devaraj-naik-3882b52a8' },
+  { icon: FaGithub, title: 'GitHub', value: 'github.com/devaraj2809', href: 'https://github.com/devaraj2809' },
 ]
 
 export { profileImage, secondaryImage }

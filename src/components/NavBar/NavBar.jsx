@@ -39,9 +39,9 @@ function NavBar() {
   return (
     <header className="site-header">
       <div className="shell nav-shell">
-        <a href="#home" className="brand" aria-label="Abhishek R Juvatkar home">
-          <span className="brand-mark">AR</span>
-          <span>Abhishek</span>
+        <a href="#home" className="brand" aria-label="Devaraj M Naik home">
+          <span className="brand-mark">DN</span>
+          <span>Devaraj M Naik</span>
         </a>
 
         <nav className="site-nav" aria-label="Primary">
