@@ -1,5 +1,5 @@
-import profileImage from './assets/Draj.jpeg'
-import secondaryImage from './assets/about.jpg'
+import profileImage from './assets/android_ai.jpeg'
+import secondaryImage from './assets/andrid.png'
 import { FaCode, FaBrain, FaMobileAlt, FaDatabase, FaTools, FaCertificate, FaEnvelope, FaPhoneAlt, FaLinkedinIn, FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { HiOutlineSparkles } from 'react-icons/hi2'
 
@@ -31,25 +31,25 @@ export const education = [
   {
     year: '2018 - 2021',
     title: 'Diploma in Computer Science',
-    place: 'R V College of Engineering, Bengaluru',
+    place: 'S.v Polytechnic, Bengaluru',
     details: 'Built strong fundamentals in programming, web technologies, and database systems.'
   }
 ]
 
 export const experience = [
   {
-    year: '2025 · 6 months',
-    title: 'Python Developer Intern',
-    company: 'Iclonis Tech Solutions, Bengaluru',
-    details: 'Developed and integrated LLM models and built Django REST APIs for AI-powered applications.',
-    tags: ['Python', 'Django', 'LLM', 'REST API', 'AI Integrations']
+    year: '2023 · 6 months',
+    title: 'Data Analysist Intern',
+    company: 'Rapsol Technology, Bengaluru',
+    details: 'Conducted data analysis using Python, Numpy, Pandas, Matplotlib and SQL focusing on extracting insights.',
+    tags: ['Python', 'Numpy', 'Pandas', 'Matplotlib', 'SQL']
   },
   {
     year: '2021 - 2022',
     title: 'Junior Software Engineer',
-    company: 'Iclonis Tech Solution, Bengaluru',
-    details: 'Developed laboratory management software using C, .NET, and SQL Server in WinForms environments.',
-    tags: ['C', '.NET', 'SQL Server', 'WinForms']
+    company: 'Vinatu Software Technology, Bengaluru',
+    details: 'Developed a restaurant management software application using React.js, Node.js, and PostgreSQL in a Dockerized environment.',
+    tags: ['React', 'Node.js', 'PostgreSQL', 'Docker']
   }
 ]
 
@@ -57,9 +57,9 @@ export const skills = [
   { title: 'Languages', icon: FaCode, items: ['Java', 'Python', 'C', 'JavaScript', 'SQL', 'HTML/CSS'] },
   { title: 'Mobile Development', icon: FaMobileAlt, items: ['Android Studio', 'Java', 'Firebase', 'XML', 'Flutter'] },
   { title: 'AI & Data', icon: FaBrain, items: ['LLM Fine-tuning', 'Deep Learning', 'TensorFlow', 'Data Extraction', 'Python Libraries'] },
-  { title: 'Backend & Databases', icon: FaDatabase, items: ['Django', 'Flask', '.NET', 'MySQL', 'Firebase', 'MongoDB'] },
+  { title: 'Backend & Databases', icon: FaDatabase, items: ['Express.js', 'Flask','Node.js','PostgreSQL', 'MySQL', 'Firebase', 'MongoDB'] },
   { title: 'Tools & Frameworks', icon: FaTools, items: ['Git', 'Visual Studio', 'React JS', 'Bootstrap', 'MVC'] },
-  { title: 'Certifications', icon: FaCertificate, items: ['Java OOP - Udemy', 'Programming in Java - NPTEL', 'LeetCode Profile'] },
+  { title: 'Certifications', icon: FaCertificate, items: ['Java OOP - Udemy', 'Programming in Python - NPTEL', 'LeetCode Profile'] },
 ]
 
 export const projects = [
@@ -77,13 +77,13 @@ export const projects = [
     image: secondaryImage,
     stack: ['Android Studio', 'Java', 'Firebase', 'XML'],
   },
-  {
-    category: 'AI / ML',
-    title: 'LLM Integration with PDF Processing',
-    description: 'Fine-tuned LLM workflows and processed complex PDFs to improve document understanding and downstream automation.',
-    image: profileImage,
-    stack: ['Python', 'LLM', 'Django', 'API'],
-  },
+  // {
+  //   category: 'AI / ML',
+  //   title: 'LLM Integration with PDF Processing',
+  //   description: 'Fine-tuned LLM workflows and processed complex PDFs to improve document understanding and downstream automation.',
+  //   image: profileImage,
+  //   stack: ['Python', 'LLM', 'Django', 'API'],
+  // },
 ]
 
 export const workHighlights = [
@@ -106,13 +106,13 @@ export const workHighlights = [
 
 export const certificates = [
   'Java OOP - Udemy',
-  'Programming in Java - NPTEL',
-  'Problem Solving Practice - codechef',
+  'Programming in Python - NPTEL',
+  // 'Problem Solving Practice - codechef',
 ]
 
 export const certificateUrls = {
-  javaCertificate: 'https://www.udemy.com/certificate/UC-JAVA-OOP',
-  pythonCertificate: 'https://nptel.ac.in/certificate/PYTHON',
+  javaCertificate: '/Users/vinayakshedgeri/_dev/Portfolio/src/assets/javaProgramingFunadmentals.pdf',
+  pythonCertificate: '/Users/vinayakshedgeri/_dev/Portfolio/src/assets/The Joy of Computing using Python.jpg',
 }
 
 export const contacts = [
