@@ -1,5 +1,5 @@
-import { secondaryImage } from '../../constants'
-
+// import { secondaryImage } from '../../constants'
+import aboutImage from '../../assets/about.jpg'
 function About() {
   return (
     <section className="section" id="about">
@@ -18,7 +18,7 @@ function About() {
         </div>
 
         <div className="media-card reveal-up delay-2">
-          <img src={secondaryImage} alt="Secondary visual for portfolio" />
+          <img src={aboutImage} alt="About visual for portfolio" />
         </div>
       </div>
     </section>
