@@ -31,7 +31,7 @@ function Home() {
           </div>
           <div className="floating-panel">
             <p className="floating-label">Current focus</p>
-            <h3>LLM workflows, APIs, and full-stack frontend polish</h3>
+            <h3> APIs, and full-stack frontend polish</h3>
           </div>
         </div>
       </div>
