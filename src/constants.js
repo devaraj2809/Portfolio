@@ -45,7 +45,7 @@ export const experience = [
     tags: ['Python', 'Numpy', 'Pandas', 'Matplotlib', 'SQL']
   },
   {
-    year: '2021 - 2022',
+    year: '2025 - 2026',
     title: 'Junior Software Engineer',
     company: 'Vinatu Software Technology, Bengaluru',
     details: 'Developed a restaurant management software application using React.js, Node.js, and PostgreSQL in a Dockerized environment.',
