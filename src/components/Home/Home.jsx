@@ -1,5 +1,5 @@
-import { heroStats, profileImage } from '../../constants'
-
+import { heroStats } from '../../constants'
+import Draj from '../../assets/Draj.jpeg'
 function Home() {
   return (
     <section className="hero-section" id="home">
@@ -27,7 +27,7 @@ function Home() {
 
         <div className="hero-visual reveal-up delay-2">
           <div className="portrait-card">
-            <img src={profileImage} alt="Abhishek portfolio visual" />
+            <img src={Draj} alt="Abhishek portfolio visual" />
           </div>
           <div className="floating-panel">
             <p className="floating-label">Current focus</p>
