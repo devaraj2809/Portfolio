@@ -24,7 +24,6 @@ function Home() {
             ))}
           </div>
         </div>
-
         <div className="hero-visual reveal-up delay-2">
           <div className="portrait-card">
             <img src={Draj} alt="Abhishek portfolio visual" />
