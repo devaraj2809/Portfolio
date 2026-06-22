@@ -23,7 +23,6 @@ function Certificate() {
       buttonColor: "bg-green-500 hover:bg-green-600"
     }
   ]
-
   return (
     <div className="container mx-auto px-4 py-12 text-white">
       <h2 className="text-4xl font-bold mb-12 text-center">

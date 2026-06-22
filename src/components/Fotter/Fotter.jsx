@@ -11,5 +11,4 @@ function Fotter() {
     </footer>
   )
 }
-
 export default Fotter

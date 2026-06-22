@@ -16,7 +16,6 @@ function About() {
             backend systems, and application building without relying on heavy effects or cluttered layouts.
           </p>
         </div>
-
         <div className="media-card reveal-up delay-2">
           <img src={aboutImage} alt="About visual for portfolio" />
         </div>
