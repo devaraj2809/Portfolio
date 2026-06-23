@@ -1,5 +1,4 @@
 import { contacts } from '../../constants'
-
 function Contact() {
   return (
     <section className="section section-contact" id="contact">
